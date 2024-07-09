@@ -1,0 +1,19 @@
+{
+  "name": "crawler-puppeteer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --build tsconfig.build.json && tsup src --minify",
+    "start:dev": "npx tsx watch ./src/index.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "@types/node": "^20.14.10",
+    "@types/puppeteer": "^7.0.4",
+    "puppeteer": "^22.12.1",
+    "ts-node": "^10.9.2"
+  }
+}
