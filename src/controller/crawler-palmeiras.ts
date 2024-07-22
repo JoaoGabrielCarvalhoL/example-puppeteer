@@ -29,8 +29,7 @@ export class CrawlerPalmeirasController {
             if(link && title && publishedAt) {
                 payload.push(new Payload(link!, title!, publishedAt!));
             }
-            
-            console.log({link, title, publishedAt});
+            console.log(payload);
         }
     }
 }
